@@ -1,9 +1,22 @@
-
 var a = document.querySelector('.js');
 console.log(a);
-a.innerHTML = ":tiktok wbijajcie na UwUxercegowine i na srb_doge bnhkyof";
-var b = document.querySelector(".bt");
-console.log(b)
+a.innerHTML = "";
+var b = document.querySelector('.bt');
+var lista = [
+    "Doge ma super moc", 
+    "Miłego Doga",  
+    "Super Doge", 
+    "Moc doge", 
+    "Doge super"];
+    
+    
+    
+function getRandomInt(max) {
+    return Math.floor(Math.random() * max);
+}
+
+    
 b.onclick = function(){
-    a.innerHTML = "Zmiana";
+    var losowa = getRandomInt(5);
+    a.innerHTML = lista[losowa];
 }
